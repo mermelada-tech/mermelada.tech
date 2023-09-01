@@ -2,10 +2,12 @@
 import Card from './Card.astro'
 ---
 
-<section class='about-page'>
-  <div class='card-container'>
+<section class='flex flex-col justify-center items-center p-4'>
+  <div
+    class='block md:grid md:grid-cols-[repeat(auto-fit,minmax(50px,1fr))] md:gap-8'
+  >
     <Card>
-      <h1 class='card-title'>Comunidad 📧</h1>
+      <h1 class='text-2xl font-bold mb-4 text-center'>Comunidad 📧</h1>
       <p>
         Es una comunidad de mujeres para mujeres, a fin de reforzar nuestros
         conocimientos en diferentes lenguajes de programación con el aporte de
@@ -16,7 +18,7 @@ import Card from './Card.astro'
       </p>
     </Card>
     <Card>
-      <h1 class='card-title'>Misión 🎯</h1>
+      <h1 class='text-2xl font-bold mb-4 text-center'>Misión 🎯</h1>
       <p>
         Aprenderemos mediante la colaboración en distintos proyectos de código
         abierto adaptados a los niveles de cada integrante. ¡Puedes incluirlos
@@ -24,7 +26,7 @@ import Card from './Card.astro'
       </p>
     </Card>
     <Card>
-      <h1 class='card-title'>Valores 👁️‍🗨️</h1>
+      <h1 class='text-2xl font-bold mb-4 text-center'>Valores 👁️‍🗨️</h1>
       <p>
         Si bien los workshop compartidos son de carácter informativo y no cursos
         certificados, tendrán contenido de valor que serán útiles para tener el
@@ -35,35 +37,3 @@ import Card from './Card.astro'
     </Card>
   </div>
 </section>
-<style>
-  .about-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 15px;
-  }
-  .about-page h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-  }
-  .card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    gap: 2rem;
-  }
-
-  .card-title {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-  }
-
-  @media (max-width: 768px) {
-    .card-container {
-      display: block;
-    }
-  }
-</style>

@@ -1,27 +1,38 @@
-import './styles/footer.css'
 export const Footer = () => {
   return (
-    <footer class='footer'>
-      <div class='container'>
-        <div>
+    <footer className='footer bg-extra text-white text-center p-5'>
+      <div class='flex justify-between items-center'>
+        <div className='text-left'>
           <h3>Mermelada.tech 🌈💜</h3>
           <p>Creando comunidades de mujeres en tecnología</p>
         </div>
-        <div>
-          <h3>Links</h3>
-          <ul>
+        <div className='text-left'>
+          <h3 className='mb-2.5'>Links</h3>
+          <ul className='list-none'>
             <li>
-              <a href='/'>Home</a>
+              <a href='/' className='text-white no-underline hover:underline'>
+                Home
+              </a>
             </li>
             <li>
-              <a href='/comunidad'>Comunidad</a>
+              <a
+                href='/comunidad'
+                className='text-white no-underline hover:underline'
+              >
+                Comunidad
+              </a>
             </li>
             <li>
-              <a href='/blog'>Blog</a>
+              <a
+                href='/blog'
+                className='text-white no-underline hover:underline'
+              >
+                Blog
+              </a>
             </li>
           </ul>
         </div>
-        <div className='social-media'>
+        <div className='sm:flex gap-2'>
           <a href='https://instagram.com/mermelada.tech_'>
             <img src='../../instagram.png' />
           </a>
